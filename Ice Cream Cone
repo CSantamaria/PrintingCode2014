@@ -1,0 +1,23 @@
+import processing.pdf.*;
+
+void setup() {
+  
+   background(0);
+ 
+  size(400, 600, PDF, "heladoE.pdf");
+  stroke(255); 
+  strokeWeight(4); 
+  fill(0);  
+  triangle(120,340,280,340,200,580);
+  ellipse(200, 320, 222, 222);
+ 
+  
+  for(int i=0; i<340; i++){
+    stroke(255); 
+    strokeWeight(1); 
+    fill(0); 
+    rect(random(0,600),random(0,600),4, 4,random(1,2));
+  }  
+   
+  exit();
+}
